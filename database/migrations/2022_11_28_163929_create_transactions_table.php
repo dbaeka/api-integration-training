@@ -25,6 +25,7 @@ class CreateTransactionsTable extends Migration
             $table->string('amount');
             $table->string('third_party_reference');
             $table->string('description', 300)->nullable();
+            $table->string('callback_url')->nullable();
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent();
         });
